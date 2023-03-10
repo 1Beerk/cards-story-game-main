@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.line {
+    font-size: 2.5rem;
+    text-align: center;
+    border-right: solid 2px rgba(255,255,255,0.7);
+    white-space: nowrap;
+    overflow: hidden;
+    width: 50ch;
+    animation: typewriter 10s steps(15) 500ms, cursor 500ms steps(15) infinite;
+    font-family: 'Waiting for the Sunrise', cursive;
+}
+/* typewriter animation */
+@keyframes typewriter {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 22ch;
+    }
+}
+/* cursor animation */
+@keyframes cursor {
+    0% {
+        border-right-color: rgba(255,255,255,0.7);
+    }
+
+    100% {
+        border-right-color: transparent;
+    }
+}
+.createCardCss {
+    box-shadow: 0 20px 50px rgba(255, 0, 0, 0.8);
+}
+
